@@ -14,8 +14,15 @@
     align-items: center;
 }
 
+.todoItems>.todoItemsCard>div:last-child>div{
+    display: flex;
+}
 
-@media screen and (max-width: 650px) {
+.todoItems>.todoItemsCard>div:last-child>div>p {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 950px) {
     .todoItems {
         margin-top: 2.5vmax;
     }
@@ -24,5 +31,10 @@
     .todoItems>.todoItemsCard>div:last-child>p
     {
         font-size: small;
+    }
+
+    .todoItems>.todoItemsCard>div:last-child>div{
+        display: flex;
+        flex-direction: column;
     }
 }

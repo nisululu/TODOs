@@ -16,7 +16,7 @@ const TodoItem = ({ item, handleDelete, handleEdit, handleChecked }) => {
     }
 
     return (
-        <div className='todoItems' style={{ backgroundColor: item.completed ? "#00ffcc4e" : "#cce6ff" }}>
+        <div className='todoItems' style={{ backgroundColor: item.completed ? "#76D7C4" : "#D0D3D4" }}>
             <div className='todoItemsCard'>
                 <div>
                     <Checkbox
@@ -30,8 +30,10 @@ const TodoItem = ({ item, handleDelete, handleEdit, handleChecked }) => {
                 <div >
                     <h4 style={{ textDecoration: item.completed ? "line-through" : "none" }}>{item.name}</h4>
                     <p>{item.description}</p>
-                    <p>Created: {item.date}</p>
-                    <p>{item.completedDate ? "Completed: " + item.completedDate : ""}</p>
+                    <div>
+                        <p>Created: {item.date}</p>
+                        <p>{item.completedDate ? "Completed: " + item.completedDate : ""}</p>
+                    </div>
                 </div>
             </div>
 

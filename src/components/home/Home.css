@@ -58,7 +58,7 @@
     padding: .5vmax;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 950px) {
     .homePage {
         padding: 5vmax 3vmax;
     }

@@ -70,6 +70,7 @@ const Home = () => {
     }
 
     if (e.target.value === "all") {
+      setValue("all")
       setFilter(0)
     }
   }

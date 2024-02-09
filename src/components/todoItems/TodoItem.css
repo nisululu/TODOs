@@ -2,7 +2,7 @@
     padding: 1vmax 1.5vmax;
     border-radius: 5px;
     margin-top: 1vmax;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,9 +27,7 @@
         margin-top: 2.5vmax;
     }
 
-    .todoItems>.todoItemsCard>div:last-child>h4,
-    .todoItems>.todoItemsCard>div:last-child>p
-    {
+    .todoItems>.todoItemsCard>div:last-child>h4,p{
         font-size: small;
     }
 

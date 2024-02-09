@@ -8,7 +8,7 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import EditBox from '../dialogBox/EditBox';
 
 const TodoItem = ({ item, handleDelete, handleEdit, handleChecked }) => {
-    
+
     const [open, setOpen] = useState(false)
 
     const handleClose = () => {
@@ -28,10 +28,10 @@ const TodoItem = ({ item, handleDelete, handleEdit, handleChecked }) => {
                     />
                 </div>
                 <div >
-                    <h4>{item.name}</h4>
+                    <h4 style={{ textDecoration: item.completed ? "line-through" : "none" }}>{item.name}</h4>
                     <p>{item.description}</p>
                     <p>Created: {item.date}</p>
-                    <p>{item.completedDate ? "Completed: "+item.completedDate : "" }</p>
+                    <p>{item.completedDate ? "Completed: " + item.completedDate : ""}</p>
                 </div>
             </div>
 

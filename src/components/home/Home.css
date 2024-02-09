@@ -1,0 +1,70 @@
+.homePage {
+    padding: 5vmax 20vmax;
+}
+
+.homePage>h1 {
+    text-align: center;
+    margin-bottom: 2vmax;
+}
+
+.addTask {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options {
+    padding: 10px 20px;
+    text-align: center;
+    outline: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+    text-align: center;
+}
+
+.form>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: red;
+}
+
+.form>input {
+    width: 450px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.submitDialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.submitDialog>label:nth-last-child(2) {
+    margin: 20px 0 10px 0;
+}
+
+.textField,
+.textArea {
+    outline: none;
+    padding: .5vmax;
+}
+
+@media screen and (max-width: 650px) {
+    .homePage {
+        padding: 5vmax 3vmax;
+    }
+
+    .homePage>h1 {
+        font-size: 3vmax;
+        margin-bottom: 2.5vmax;
+    }
+}
